@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <h1>What can Js do ?</h1>
+    <p>Js can change the HTML Attribute values.</p>
+    <p>In This case Js changes the value of the src attribute of an image.</p>
+    <div style="text-align: center;">
+        <img id="bulb" src="pic_bulboff.gif">
+    </div>
+    <div>
+        <p>onclick events</p>
+        <button onclick="document.getElementById('bulb').src='pic_bulbon.gif'">Turn on the light</button>
+        <button onclick="document.getElementById('bulb').src='pic_bulboff.gif'">Turn off the light</button>
+    </div>
+    <div>
+        <p>onmouseover events</p>
+        <button onmouseover="document.getElementById('bulb').src='pic_bulbon.gif'">Turn on the light</button>
+        <button onmouseover="document.getElementById('bulb').src='pic_bulboff.gif'">Turn off the light</button>
+    </div>
+    <div>
+        <p>onmouseout events</p>
+        <button onmouseout="document.getElementById('bulb').src='pic_bulboff.gif'">Turn off the light</button>
+        <button onmouseout="document.getElementById('bulb').src='pic_bulbon.gif'">Turn on the light</button>
+    </div>
+</body>
+</html>
