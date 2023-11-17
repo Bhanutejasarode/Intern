@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print</title>
+</head>
+<body>
+    <div id="section1">
+        <h2>section1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Delectus id iusto ea saepe numquam voluptate et fugit consectetur, rerum cupiditate?
+        </p>
+    </div>
+    <div >
+        <h2>section2</h2>
+        <p id="section2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Totam facere nam ab tenetur molestiae eligendi corrupti consequuntur. Temporibus, et. Laborum.
+        </p>
+    </div>
+    <div id="section3">
+        <h2>section3</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Fuga alias, eum ab tenetur a perspiciatis quaerat nihil distinctio at? Nulla.
+        </p>
+    </div>
+    <button onclick="printContent('section3')">Print</button>
+    <script>
+        function printContent(page){
+            let mainpage = document.body.innerHTML;
+            let print = document.getElementById(page).innerHTML;
+            document.body.innerHTML = print;
+            window.print();
+            document.body.innerHTML = mainpage;
+           
+        }
+    </script>
+</body>
+</html>

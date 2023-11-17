@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+</head>
+<body>
+    <h3>we are working with onclick events</h3>
+    <p id="txt">This text is very small</p>
+    <button onclick="changetext()">click</button>
+
+    <script>
+        let text = document.getElementById('txt');
+        function changetext(){
+            text.innerHTML = ' This text is very big';
+            function sizetext(){
+                text.style = 'font-size : 20px';
+            }
+            sizetext() ;
+        }
+    </script>
+</body>
+</html>
